@@ -2,16 +2,16 @@
 
 # Part 1
 
-def sum arr
-  # YOUR CODE HERE
+def sum(arr)
+  arr.inject(0){|sum,x| sum + x }
 end
 
-def max_2_sum arr
-  # YOUR CODE HERE
+def max_2_sum(arr)
+  arr.max(2).sum
 end
 
-def sum_to_n? arr, n
-  # YOUR CODE HERE
+def sum_to_n?(arr, n)
+   arr.permutation(2).any? { |a, b| a + b == n }
 end
 
 # Part 2
